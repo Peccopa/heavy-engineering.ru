@@ -7,9 +7,11 @@ const Contacts = (): ReactElement => {
 
   return (
     <section className="contacts">
-      <h1>{t('contacts.title')}</h1>
-      <p>{t('contacts.description')}</p>
-      <button type="button">{t('contacts.button')}</button>
+      <div className={'container'}>
+        <h1>{t('contacts.title').toUpperCase()}</h1>
+        <p>{t('contacts.description')}</p>
+        <button type="button">{t('contacts.button').toUpperCase()}</button>
+      </div>
     </section>
   );
 };

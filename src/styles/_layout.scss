@@ -1,0 +1,10 @@
+@use './variables' as vars;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: vars.$dsktop-width;
+  margin: 0 auto;
+}

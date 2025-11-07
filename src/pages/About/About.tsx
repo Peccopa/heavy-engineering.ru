@@ -7,9 +7,11 @@ const About = (): ReactElement => {
 
   return (
     <section className="about">
-      <h1>{t('about.title')}</h1>
-      <p>{t('about.description')}</p>
-      <button type="button">{t('about.button')}</button>
+      <div className={'container'}>
+        <h1>{t('about.title').toUpperCase()}</h1>
+        <p>{t('about.description')}</p>
+        <button type="button">{t('about.button').toUpperCase()}</button>
+      </div>
     </section>
   );
 };
