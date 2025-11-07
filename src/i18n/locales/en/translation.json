@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "Home Page",
+    "description": "Welcome to Heavy Engineering — reliable engineering solutions for industry.",
+    "button": "Learn more"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Welcome to Heavy Engineering — reliable engineering solutions for industry.",
+    "button": "Learn more"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "description": "Welcome to Heavy Engineering — reliable engineering solutions for industry.",
+    "button": "Learn more"
+  }
+}

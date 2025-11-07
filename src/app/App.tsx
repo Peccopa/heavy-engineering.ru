@@ -1,10 +1,10 @@
 import type { ReactElement } from 'react';
-import './App.module.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '@/pages/Home/Home';
 import About from '@/pages/About/About';
 import Contacts from '@/pages/Contacts/Contacts';
 import Header from '@/components/Header/Header';
+import '../i18n';
 
 const App = (): ReactElement => {
   return (
