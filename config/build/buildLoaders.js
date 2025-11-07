@@ -14,6 +14,7 @@ module.exports = function buildLoaders({ mode }) {
           modules: {
             localIdentName: isDev ? '[path][local]' : '[hash:base64:8]',
           },
+          esModule: false,
         },
       },
       'sass-loader',

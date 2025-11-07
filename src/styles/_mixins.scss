@@ -1,0 +1,33 @@
+// Flexbox центрируем содержимое по горизонтали и вертикали
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flex-контейнер с direction и gap
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// фонты
+@mixin font($size, $weight: normal, $line: 1.2, $family: 'Arial, sans-serif') {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+}
+
+// shadow
+@mixin shadow($x: 0, $y: 2px, $blur: 6px, $color: rgba(0, 0, 0, 0.15)) {
+  box-shadow: $x $y $blur $color;
+}
+
+// transition
+@mixin transition($properties: all, $duration: 0.3s, $timing: ease-in-out) {
+  transition: $properties $duration $timing;
+}

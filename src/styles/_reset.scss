@@ -1,0 +1,42 @@
+@use './variables.scss' as vars;
+
+*,
+*::before,
+*::after {
+  user-select: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: vars.$font-main;
+  color: vars.$color-dark;
+  background-color: vars.$color-light;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+img {
+  user-select: none;
+  display: block;
+  -webkit-user-drag: none;
+}
