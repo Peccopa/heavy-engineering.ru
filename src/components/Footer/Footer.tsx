@@ -11,12 +11,12 @@ const Footer = (): ReactElement => {
 
   return (
     <footer className={styles.footer}>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.inner}>
           {/* Левая часть — логотип */}
           <div className={styles.brand}>
             <img src={logo} alt="Heavy Engineering" className={styles.logo} />
-            <p className={styles.brandText}>
+            <p className={styles.text}>
               {t('footer.description', {
                 defaultValue:
                   'Официальный дилер катализаторов для сернокислотных производств',
