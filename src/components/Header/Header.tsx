@@ -3,13 +3,14 @@ import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styles from './Header.module.scss';
 import logo from '@/assets/images/logo-full.svg';
+import { useState } from 'react';
 
 const Header = (): ReactElement => {
   const { t, i18n } = useTranslation();
-
   const toggleLanguage = (): void => {
     void i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
   };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -18,13 +19,14 @@ const Header = (): ReactElement => {
           <img src={logo} alt="Heavy Engineering" />
         </Link>
         <nav className={styles.nav}>
-          <ul className={styles.list}>
+          <ul className={`${styles.list} ${isOpen ? styles.open : ''}`}>
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   isActive ? styles.active : undefined
                 }
+                onClick={() => setIsOpen(false)} // закрытие на мобильны
               >
                 {t('home.title')}
               </NavLink>
@@ -35,6 +37,7 @@ const Header = (): ReactElement => {
                 className={({ isActive }) =>
                   isActive ? styles.active : undefined
                 }
+                onClick={() => setIsOpen(false)} // закрытие на мобильны
               >
                 {t('catalysts.title')}
               </NavLink>
@@ -45,6 +48,7 @@ const Header = (): ReactElement => {
                 className={({ isActive }) =>
                   isActive ? styles.active : undefined
                 }
+                onClick={() => setIsOpen(false)} // закрытие на мобильны
               >
                 {t('about.title')}
               </NavLink>
@@ -55,11 +59,20 @@ const Header = (): ReactElement => {
                 className={({ isActive }) =>
                   isActive ? styles.active : undefined
                 }
+                onClick={() => setIsOpen(false)} // закрытие на мобильны
               >
                 {t('contacts.title')}
               </NavLink>
             </li>
           </ul>
+
+          <button
+            type="button"
+            className={styles.burger}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            ☰
+          </button>
 
           <button
             type="button"
