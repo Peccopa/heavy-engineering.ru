@@ -1,25 +1,29 @@
-@use '@/styles/variables' as vars;
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mix;
 
 .header {
   width: 100%;
-  padding: 0.75rem 0;
-  background-color: vars.$color-light;
-  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+  box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 8%);
 }
 
-.inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.container {
+  max-width: var.$dsktop-width;
+  margin: 0 auto;
+  padding: 2rem;
+
+  @include mix.flex-between;
+
+  @media (max-width: var.$tablet-width) {
+    padding: 1rem;
+  }
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  @include mix.flex-center;
 
   img {
     width: auto;
-    height: 48px;
+    height: 6rem;
   }
 }
 
@@ -29,44 +33,40 @@
   align-items: center;
 }
 
-.navList {
+.list {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 
   a {
     font-weight: 500;
-    color: vars.$color-brand-l;
-    text-decoration: none;
+    color: var.$color-brand-l;
     text-transform: uppercase;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: vars.$color-brand-d;
+      color: var.$color-brand-d;
     }
   }
 }
 
 .active {
-  border-bottom: 2px solid vars.$color-brand-d;
-  color: vars.$color-brand-d;
+  border-bottom: 2px solid var.$color-brand-d;
+  color: var.$color-brand-d;
 }
 
-.langBtn {
+.button {
   cursor: pointer;
   padding: 0.3rem 0.6rem;
-  border: 1px solid vars.$color-brand-l;
+  border: 1px solid var.$color-brand-l;
   border-radius: 4px;
   font-weight: 600;
-  color: vars.$color-brand-l;
+  color: var.$color-brand-l;
   background: none;
   transition: all 0.2s ease-in-out;
 
   &:hover {
     color: #fff;
-    background-color: vars.$color-brand-l;
+    background-color: var.$color-brand-l;
   }
 }

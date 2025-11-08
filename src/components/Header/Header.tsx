@@ -13,65 +13,62 @@ const Header = (): ReactElement => {
 
   return (
     <header className={styles.header}>
-      <div className="container">
-        <div className={styles.inner}>
-          <Link to="/" className={styles.logo}>
-            <img src={logo} alt="Heavy Engineering" />
-          </Link>
+      <div className={styles.container}>
+        <Link to="/" className={styles.logo}>
+          <img src={logo} alt="Heavy Engineering" />
+        </Link>
+        <nav className={styles.nav}>
+          <ul className={styles.list}>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+              >
+                {t('home.title')}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/catalysts"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+              >
+                {t('catalysts.title')}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+              >
+                {t('about.title')}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contacts"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+              >
+                {t('contacts.title')}
+              </NavLink>
+            </li>
+          </ul>
 
-          <nav className={styles.nav}>
-            <ul className={styles.navList}>
-              <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : undefined
-                  }
-                >
-                  {t('home.title')}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/catalysts"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : undefined
-                  }
-                >
-                  {t('catalysts.title')}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : undefined
-                  }
-                >
-                  {t('about.title')}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contacts"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : undefined
-                  }
-                >
-                  {t('contacts.title')}
-                </NavLink>
-              </li>
-            </ul>
-
-            <button
-              type="button"
-              className={styles.langBtn}
-              onClick={toggleLanguage}
-            >
-              {i18n.language.toUpperCase()}
-            </button>
-          </nav>
-        </div>
+          <button
+            type="button"
+            className={styles.button}
+            onClick={toggleLanguage}
+          >
+            {i18n.language.toUpperCase()}
+          </button>
+        </nav>
       </div>
     </header>
   );

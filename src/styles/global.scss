@@ -1,6 +1,6 @@
-@use './mixins';
-@use './reset';
-@use './states';
-@use './typography';
-@use './variables';
-@use './layout';
+@forward './mixins';
+@forward './reset';
+@forward './states';
+@forward './typography';
+@forward './variables';
+@forward './layout';
