@@ -1,22 +1,39 @@
-@use '@/styles/variables' as vars;
+@use '@/styles/variables' as var;
+@use '@/styles/mixins' as mix;
 
 .footer {
   position: relative;
-  overflow: hidden;
-  padding: 2rem 0;
-  color: vars.$color-light;
-  background-color: vars.$color-brand-d;
+  color: var.$color-light;
+  background-color: var.$color-brand-d;
 
   &::after {
     content: '';
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 10rem;
-    height: 10rem;
-    opacity: 0.9;
-    background-color: vars.$color-brand-l;
+    width: 20rem;
+    height: 20rem;
+    background-color: var.$color-brand-l;
     clip-path: polygon(100% 100%, 0 100%, 100% 0);
+
+    @media (max-width: var.$tablet-width) {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+}
+
+.container {
+  @include mix.flex-between;
+
+  max-width: var.$dsktop-width;
+  margin: 0 auto;
+  padding: 2rem;
+
+  @media (max-width: var.$bigtab-width) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
   }
 }
 
@@ -27,7 +44,8 @@
   align-items: flex-start;
   justify-content: space-between;
 
-  @media (width <= 768px) {
+  @media (max-width: var.$tablet-width) {
+    z-index: 10;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -41,20 +59,21 @@
   align-items: flex-start;
   max-width: 22rem;
 
-  @media (width <= 768px) {
+  @media (max-width: var.$tablet-width) {
     align-items: center;
   }
 }
 
 .logo {
-  width: 180px;
+  width: 18rem;
   height: auto;
-  filter: brightness(0) invert(1); // чтобы белый логотип контрастно смотрелся
+  filter: brightness(0) invert(1);
 }
 
-.brandText {
+.text {
   font-size: 0.875rem;
   line-height: 1.4;
+  text-align: start;
   opacity: 0.9;
 }
 
@@ -70,7 +89,7 @@
   gap: 0.5rem;
   align-items: center;
   font-weight: 500;
-  color: vars.$color-light;
+  color: var.$color-light;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 
@@ -81,7 +100,7 @@
   }
 
   &:hover {
-    color: vars.$color-brand-l;
+    color: var.$color-brand-l;
 
     img {
       opacity: 1;
@@ -90,8 +109,15 @@
 }
 
 .copy {
-  margin-top: 2rem;
+  position: absolute;
+  right: 20rem;
+  bottom: 44%;
   font-size: 0.875rem;
   text-align: center;
   opacity: 0.8;
+
+  @media (max-width: var.$bigtab-width) {
+    position: static;
+    z-index: 10;
+  }
 }
