@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
@@ -14,7 +14,7 @@ import '../i18n';
 
 const App = (): ReactElement => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className={styles.app}>
         <Header />
         <main className={styles.main}>
@@ -27,7 +27,7 @@ const App = (): ReactElement => {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
