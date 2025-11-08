@@ -6,6 +6,7 @@ import Contacts from '@/pages/Contacts/Contacts';
 import Header from '@/components/Header/Header';
 import styles from './App.module.scss';
 import '../i18n';
+import Footer from '@/components/Footer/Footer';
 
 const App = (): ReactElement => {
   return (
@@ -19,6 +20,7 @@ const App = (): ReactElement => {
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );

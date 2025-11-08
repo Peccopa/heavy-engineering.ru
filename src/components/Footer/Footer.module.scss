@@ -1,3 +1,55 @@
+@use '../../styles/variables' as vars;
+
 .footer {
+  position: relative;
   display: flex;
+  width: 100%;
+  background-color: vars.$color-brand-d;
+
+  // padding-right: 12rem;
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 12rem;
+    height: 12rem;
+
+    // width: 20%;
+    // aspect-ratio: 1 / 1;
+    background-color: vars.$color-brand-l;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  }
+
+  .footLinks {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+
+    .footItem {
+      position: relative;
+      z-index: 10;
+      padding: 1rem;
+      color: vars.$color-light;
+
+      &::before {
+        content: '';
+        position: absolute;
+
+        // top: -2;
+        left: -0.5rem;
+        width: 1rem;
+        height: 1rem;
+
+        // background-color: red;
+        background-image: url('../../assets/images/phone.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
 }

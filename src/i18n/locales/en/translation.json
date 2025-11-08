@@ -1,17 +1,40 @@
 {
   "home": {
-    "title": "Home Page",
-    "description": "Welcome to Heavy Engineering — reliable engineering solutions for industry.",
+    "title": "Home",
+    "description": "Heavy Engineering is a Russian engineering company specializing in the supply of catalysts for sulfuric acid production. We work with major enterprises in the chemical and petrochemical industries, delivering reliable solutions and consistent quality. Our main focus is the distribution of catalysts produced by the Samara Catalyst Plant (SZK). Among our key clients are EuroChem enterprises. Our mission is to provide advanced technologies, high-performance materials, and world-class engineering support.",
     "button": "Learn more"
   },
+  "catalysts": {
+    "title": "Catalysts",
+    "description": "Heavy Engineering supplies modern catalysts for the contact process in sulfuric acid production. We offer a wide range of solutions tailored to various operational conditions and customer requirements.",
+    "list": {
+      "item1": "Vanadium HT catalysts — optimized for low-temperature operation.",
+      "item2": "Vanadium VT catalysts — ensure stable performance under standard conditions.",
+      "item3": "Cesium catalysts — provide maximum activity and productivity."
+    },
+    "note": "We provide technical selection, supply, logistics, and implementation support for catalysts produced by the Samara Catalyst Plant (SZK).",
+    "button": "Request a quote"
+  },
   "about": {
-    "title": "About Us",
-    "description": "Welcome to Heavy Engineering — reliable engineering solutions for industry.",
-    "button": "Learn more"
+    "title": "About",
+    "description": "Heavy Engineering is a Russian engineering company operating in the chemical and petrochemical industries. Our team includes experienced engineers and experts who have worked in leading Russian and international enterprises. We provide design, selection, and supply of process equipment as well as engineering consulting. Among our clients are EuroChem, Phosphorit, and Balakovo Mineral Fertilizers. We are proud to be an official partner of the Samara Catalyst Plant and hold CPR and KEY dealership certificates.",
+    "button": "Our projects"
   },
   "contacts": {
     "title": "Contacts",
-    "description": "Welcome to Heavy Engineering — reliable engineering solutions for industry.",
-    "button": "Learn more"
+    "description": "Contact us for technical consultation, catalyst selection, or a commercial proposal. We are always open to cooperation and ready to answer any questions.",
+    "address": "Moscow, 12 Promyshlennaya St.",
+    "phone1": "+7 495 123 45 67",
+    "phone2": "+7 916 321 65 34",
+    "email": "info@heavy-engineering.ru",
+    "hours": "Mon–Fri: 9:00–18:00",
+    "button": "Send message"
+  },
+  "footer": {
+    "phone1": "+7 495 123 45 67",
+    "phone2": "+7 916 321 65 34",
+    "email": "info@heavy-engineering.ru",
+    "site": "www.heavy-engineering.ru",
+    "copyright": "© 2025 Heavy Engineering. All rights reserved."
   }
 }

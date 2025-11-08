@@ -25,7 +25,8 @@ const Header = (): ReactElement => {
               <Link to="/contacts">{t('contacts.title').toUpperCase()}</Link>
             </li>
           </ul>
-          <button className={styles.navBtn}
+          <button
+            className={styles.navBtn}
             onClick={() =>
               void i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
             }
