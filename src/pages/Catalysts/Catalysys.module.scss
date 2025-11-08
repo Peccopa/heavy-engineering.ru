@@ -1,0 +1,58 @@
+@use '@/styles/variables' as vars;
+
+.catalysts {
+  padding: 4rem 0;
+
+  .title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: vars.$color-brand-d;
+  }
+
+  .description {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .list {
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+    list-style-type: none;
+
+    li {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+
+      .image {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .note {
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .button {
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-weight: 600;
+    color: vars.$color-light;
+    background-color: vars.$color-brand-d;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: vars.$color-brand-l;
+    }
+  }
+}

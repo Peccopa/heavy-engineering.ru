@@ -1,0 +1,79 @@
+@use '@/styles/variables' as vars;
+
+.contacts {
+  padding: 4rem 0;
+
+  .title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: vars.$color-brand-d;
+  }
+
+  .description {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    .infoItem {
+      display: flex;
+      flex: 1 1 200px;
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .map {
+    margin-bottom: 2rem;
+
+    iframe {
+      border-radius: 8px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid vars.$color-brand-l;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      color: vars.$color-light;
+      background-color: vars.$color-brand-d;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: vars.$color-brand-l;
+      }
+    }
+  }
+}

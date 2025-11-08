@@ -1,39 +1,77 @@
 import type { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
-import styles from './Header.module.scss';
+import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import logo from '../../assets/images/logo-full.svg'; // импортируем как обычный ресурс
+import styles from './Header.module.scss';
+import logo from '@/assets/images/logo-full.svg';
 
 const Header = (): ReactElement => {
   const { t, i18n } = useTranslation();
 
+  const toggleLanguage = (): void => {
+    void i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+  };
+
   return (
     <header className={styles.header}>
-      <div className={'container'}>
-        <Link to="/" className={styles.logo}>
-          <img src={logo} alt="Heavy Engineering" />
-        </Link>
-        <nav className={styles.nav}>
-          <ul className={styles.navLinks}>
-            <li className={styles.navItem}>
-              <Link to="/">{t('home.title').toUpperCase()}</Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link to="/about">{t('about.title').toUpperCase()}</Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link to="/contacts">{t('contacts.title').toUpperCase()}</Link>
-            </li>
-          </ul>
-          <button
-            className={styles.navBtn}
-            onClick={() =>
-              void i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
-            }
-          >
-            {i18n.language.toUpperCase()}
-          </button>
-        </nav>
+      <div className="container">
+        <div className={styles.inner}>
+          <Link to="/" className={styles.logo}>
+            <img src={logo} alt="Heavy Engineering" />
+          </Link>
+
+          <nav className={styles.nav}>
+            <ul className={styles.navList}>
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                >
+                  {t('home.title')}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/catalysts"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                >
+                  {t('catalysts.title')}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                >
+                  {t('about.title')}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contacts"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                >
+                  {t('contacts.title')}
+                </NavLink>
+              </li>
+            </ul>
+
+            <button
+              type="button"
+              className={styles.langBtn}
+              onClick={toggleLanguage}
+            >
+              {i18n.language.toUpperCase()}
+            </button>
+          </nav>
+        </div>
       </div>
     </header>
   );

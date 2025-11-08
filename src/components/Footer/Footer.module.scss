@@ -1,55 +1,97 @@
-@use '../../styles/variables' as vars;
+@use '@/styles/variables' as vars;
 
 .footer {
   position: relative;
-  display: flex;
-  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  color: vars.$color-light;
   background-color: vars.$color-brand-d;
 
-  // padding-right: 12rem;
   &::after {
     content: '';
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 12rem;
-    height: 12rem;
-
-    // width: 20%;
-    // aspect-ratio: 1 / 1;
+    width: 10rem;
+    height: 10rem;
+    opacity: 0.9;
     background-color: vars.$color-brand-l;
     clip-path: polygon(100% 100%, 0 100%, 100% 0);
   }
+}
 
-  .footLinks {
-    display: flex;
-    gap: 1rem;
+.inner {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media (width <= 768px) {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    justify-content: space-around;
-    width: 100%;
+    text-align: center;
+  }
+}
 
-    .footItem {
-      position: relative;
-      z-index: 10;
-      padding: 1rem;
-      color: vars.$color-light;
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  max-width: 22rem;
 
-      &::before {
-        content: '';
-        position: absolute;
+  @media (width <= 768px) {
+    align-items: center;
+  }
+}
 
-        // top: -2;
-        left: -0.5rem;
-        width: 1rem;
-        height: 1rem;
+.logo {
+  width: 180px;
+  height: auto;
+  filter: brightness(0) invert(1); // чтобы белый логотип контрастно смотрелся
+}
 
-        // background-color: red;
-        background-image: url('../../assets/images/phone.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-      }
+.brandText {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-style: normal;
+}
+
+.link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 500;
+  color: vars.$color-light;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  img {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.8;
+  }
+
+  &:hover {
+    color: vars.$color-brand-l;
+
+    img {
+      opacity: 1;
     }
   }
+}
+
+.copy {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  text-align: center;
+  opacity: 0.8;
 }

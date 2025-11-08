@@ -31,10 +31,10 @@
     "button": "Send message"
   },
   "footer": {
+    "description": "Official dealer of catalysts for sulfuric acid production",
     "phone1": "+7 495 123 45 67",
     "phone2": "+7 916 321 65 34",
     "email": "info@heavy-engineering.ru",
-    "site": "www.heavy-engineering.ru",
-    "copyright": "© 2025 Heavy Engineering. All rights reserved."
+    "site": "www.heavy-engineering.ru"
   }
 }

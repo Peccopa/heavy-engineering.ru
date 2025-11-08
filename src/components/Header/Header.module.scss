@@ -2,51 +2,71 @@
 
 .header {
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem 0;
   background-color: vars.$color-light;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}
 
-  .logo {
-    display: block;
-    width: 100%;
-    height: auto;
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: auto;
+    height: 48px;
   }
+}
 
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 
-    &Links {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      justify-content: left;
-      padding: 1rem;
+.navList {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    font-weight: 500;
+    color: vars.$color-brand-l;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: vars.$color-brand-d;
     }
+  }
+}
 
-    &Item {
-      display: block;
-      width: 100%;
+.active {
+  border-bottom: 2px solid vars.$color-brand-d;
+  color: vars.$color-brand-d;
+}
 
-      a {
-        display: flex;
-        width: 100%;
-        font-weight: 500;
-        color: vars.$color-brand-l;
-        white-space: nowrap;
+.langBtn {
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid vars.$color-brand-l;
+  border-radius: 4px;
+  font-weight: 600;
+  color: vars.$color-brand-l;
+  background: none;
+  transition: all 0.2s ease-in-out;
 
-        @media (hover: hover) {
-          &:hover {
-            color: vars.$color-brand-d;
-          }
-        }
-      }
-    }
-
-    &Btn {
-      cursor: pointer;
-      font-size: 1rem;
-    }
+  &:hover {
+    color: #fff;
+    background-color: vars.$color-brand-l;
   }
 }
