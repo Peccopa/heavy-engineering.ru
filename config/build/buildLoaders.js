@@ -12,10 +12,12 @@ module.exports = function buildLoaders({ mode }) {
       {
         loader: 'css-loader',
         options: {
+              importLoaders: 1,
+               esModule: false, // ✅ включаем ESM
           modules: {
+            exportLocalsConvention: 'camelCaseOnly', // ✅ camelCase и дефисы
             localIdentName: isDev ? '[path][local]' : '[hash:base64:8]',
           },
-          esModule: false,
         },
       },
       'sass-loader',

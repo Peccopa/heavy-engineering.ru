@@ -7,6 +7,12 @@
   justify-content: center;
 }
 
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 // Flex-контейнер с direction и gap
 @mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
   display: flex;
