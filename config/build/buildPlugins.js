@@ -27,6 +27,10 @@ module.exports = function buildPlugins(options) {
           from: path.resolve(paths.public, 'assets'),
           to: path.resolve(paths.output, 'assets'),
         },
+        {
+          from: path.resolve(paths.public, 'price'),
+          to: path.resolve(paths.output, 'price'),
+        },
       ],
     }),
   ];
