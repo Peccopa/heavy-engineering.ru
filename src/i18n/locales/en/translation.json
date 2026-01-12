@@ -1,23 +1,32 @@
 {
+  "header": {
+    "about": "Home",
+    "catalysts": "Catalysts",
+    "technologies": "Technologies",
+    "contacts": "Contacts"
+  },
   "about": {
-    "title": "About",
-    "description": "Heavy Engineering is an engineering integrator specializing in technologies for sulfuric acid production and other large-scale industrial processes. Our main areas of activity include the design of process units in cooperation with leading international licensors, the supply of complex process equipment, and the supply and maintenance of industrial catalysts. LLC “Heavy Engineering” (HE) is a technology partner and distributor of the Russian manufacturer of sulfur dioxide oxidation catalysts — JSC “Samara Catalyst Plant” (SZK). We are also the official agent and distributor of Keyontechs Group (Keyon Process Co., LTD.). Our customers include fertilizer producers, non-ferrous metallurgy enterprises, and oil refineries. Our competencies are based on a team of highly qualified engineers, technologists, and experts with many years of experience in leading international and Russian companies.",
+    "title": "ABOUT THE COMPANY",
+    "descriptions": {
+      "descr-1": "Heavy Engineering is an engineering integrator specializing in sulfuric acid production technologies and other large-scale industrial processes. Our core activities include process unit design in cooperation with leading global licensors, supply of complex process equipment, and supply and service support of industrial catalysts.",
+      "descr-2": "Heavy Engineering LLC (HE) is a technology partner and distributor of the Russian sulfur dioxide oxidation catalyst manufacturer JSC \"SZK\". We are also an official agent and distributor of Keyontechs Group (Keyon Process Co., LTD.). Our customers include mineral fertilizer producers, non-ferrous metallurgy enterprises, and oil refineries. Our key competence lies in a team of highly qualified engineers, technologists, and experts with unique long-term experience gained in leading international and Russian companies."
+    },
     "button": "Learn more"
   },
   "catalysts": {
-    "title": "Catalysts",
-    "description": "Heavy Engineering supplies modern catalysts for the contact process in sulfuric acid production. We offer a wide range of solutions tailored to various operational conditions and customer requirements.",
+    "title": "CATALYSTS AND SERVICES",
+    "description": "Sulfur dioxide oxidation catalysts manufactured by JSC \"SZK\". Catalyst screening, loading, and unloading services.",
     "list": {
-      "item1": "Vanadium HT catalysts — optimized for low-temperature operation.",
-      "item2": "Vanadium VT catalysts — ensure stable performance under standard conditions.",
+      "item1": "Vanadium HT catalysts — optimized for low-temperature operating conditions.",
+      "item2": "Vanadium VT catalysts — ensure stable performance under standard operating conditions.",
       "item3": "Cesium catalysts — provide maximum activity and productivity."
     },
     "note": "We provide technical selection, supply, logistics, and implementation support for catalysts produced by the Samara Catalyst Plant (SZK).",
-    "button": "Request a quote"
+    "button": "Request a proposal"
   },
   "technologies": {
-    "title": "Тechnologies",
-    "description": "Heavy Engineering is a Russian engineering company operating in the chemical and petrochemical industries. Our team includes experienced engineers and experts who have worked in leading Russian and international enterprises. We provide design, selection, and supply of process equipment as well as engineering consulting. Among our clients are EuroChem, Phosphorit, and Balakovo Mineral Fertilizers. We are proud to be an official partner of the Samara Catalyst Plant and hold CPR and KEY dealership certificates.",
+    "title": "TECHNOLOGIES AND EQUIPMENT",
+    "description": "Sulfuric acid production technologies DCDA and Wet Catalysis (WSA). Gas cleaning technologies (washing towers, Dyna-Wave counter-current scrubbers, electrostatic precipitators). Phosphogypsum utilization technologies and phosphoric acid production processes. Ammonia production technologies (Casale supply scope). Sulfuric acid alkylation technologies and spent acid regeneration.",
     "button": "Our projects"
   },
   "contacts": {
