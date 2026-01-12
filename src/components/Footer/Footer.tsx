@@ -38,10 +38,10 @@ const Footer = (): ReactElement => {
               {t('footer.phone1')}
             </a>
 
-            <a href={`tel:${t('footer.phone2')}`} className={styles.link}>
+            {/* <a href={`tel:${t('footer.phone2')}`} className={styles.link}>
               <img src={phoneIcon} alt="Phone" />
               {t('footer.phone2')}
-            </a>
+            </a> */}
 
             <a href={`mailto:${t('footer.email')}`} className={styles.link}>
               <img src={emailIcon} alt="Email" />
