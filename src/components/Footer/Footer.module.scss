@@ -70,8 +70,17 @@
   filter: brightness(0) invert(1);
 }
 
-.text {
-  font-size: 0.875rem;
+.textRu {
+  font-size: 1.35rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.4;
+  text-align: start;
+  opacity: 0.9;
+}
+
+.textEn {
+  font-size: 1.35rem;
+  letter-spacing: 0.14rem;
   line-height: 1.4;
   text-align: start;
   opacity: 0.9;

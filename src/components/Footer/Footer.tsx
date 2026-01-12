@@ -5,6 +5,8 @@ import logo from '@/assets/images/logo-full.svg';
 import phoneIcon from '@/assets/images/phone.svg';
 import emailIcon from '@/assets/images/email.svg';
 import globeIcon from '@/assets/images/globe.svg';
+import i18n from '@/i18n';
+// import clsx from 'clsx';
 
 const Footer = (): ReactElement => {
   const { t } = useTranslation();
@@ -16,10 +18,15 @@ const Footer = (): ReactElement => {
           {/* Левая часть — логотип */}
           <div className={styles.brand}>
             <img src={logo} alt="Heavy Engineering" className={styles.logo} />
-            <p className={styles.text}>
+            <p
+              className={
+                i18n.language === 'ru'
+                  ? `${styles.text} ${styles.textRu}`
+                  : `${styles.text} ${styles.textEn}`
+              }
+            >
               {t('footer.description', {
-                defaultValue:
-                  'Официальный дилер катализаторов для сернокислотных производств',
+                defaultValue: 'HEAVY ENGINEERING LLC',
               })}
             </p>
           </div>
