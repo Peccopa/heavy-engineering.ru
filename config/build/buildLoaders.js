@@ -47,7 +47,7 @@ module.exports = function buildLoaders({ mode }) {
 
   // Остальные изображения
   const assetLoader = {
-    test: /\.(png|jpe?g|gif|svg)$/i,
+    test: /\.(png|jpe?g|gif|svg|mp4)$/i,
     type: 'asset/resource',
     generator: {
       filename: 'assets/images/[name].[hash:8].[ext]',

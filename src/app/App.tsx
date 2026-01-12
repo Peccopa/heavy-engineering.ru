@@ -4,9 +4,9 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 
-import Home from '@/pages/Home/Home';
-import Catalysts from '@/pages/Catalysts/Catalysts';
 import About from '@/pages/About/About';
+import Catalysts from '@/pages/Catalysts/Catalysts';
+import Technologies from '@/pages/Technologies/Technologies';
 import Contacts from '@/pages/Contacts/Contacts';
 
 import styles from './App.module.scss';
@@ -19,9 +19,9 @@ const App = (): ReactElement => {
         <Header />
         <main className={styles.main}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<About />} />
             <Route path="/catalysts" element={<Catalysts />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/technologies" element={<Technologies />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </main>

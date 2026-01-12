@@ -1,56 +1,109 @@
-@use '@/styles/variables' as vars;
+@use '../../styles/variables' as var;
+@use '../../styles/mixins' as mix;
 
 .about {
+  width: 100%;
+  margin-top: 1rem;
   padding: 4rem 0;
+  background-color: var.$color-light;
 
-  .title {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: vars.$color-brand-d;
-  }
-
-  .description {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-
-  .subtitle {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: vars.$color-brand-l;
-  }
-
-  .mission {
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .partners,
-  .certificates {
+  .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    padding: 0;
-    list-style-type: none;
+    gap: 6rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var.$dsktop-width;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 
-    li {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 1rem;
-      text-align: center;
+  .content {
+    flex: 1 1 500px;
+    align-self: start;
 
-      img {
-        width: 120px;
-        height: auto;
-        margin-bottom: 0.5rem;
-      }
+    .title {
+      margin-bottom: 2.5rem;
+
+      // margin-left: 2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var.$color-brand-l;
+    }
+
+    .description {
+      margin-bottom: 2rem;
+      margin-bottom: auto;
+      font-size: 1.9rem;
+      line-height: 1.4;
+      color: var.$color-dark;
+      text-indent: 2rem;
+    }
+
+    // .button {
+    //   @include mixins.button(vars.$color-brand-l, vars.$color-light);
+    // }
+  }
+
+  .hero {
+    flex: 1 1 400px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+    }
+  }
+}
+
+.slider {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 4rem 0;
+  background-color: var.$color-light;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var.$dsktop-width;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .content {
+    flex: 1 1 500px;
+
+    .title {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var.$color-brand-d;
+    }
+
+    .description {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      line-height: 1.4;
+      color: var.$color-dark;
+    }
+
+    // .button {
+    //   @include mixins.button(vars.$color-brand-l, vars.$color-light);
+    // }
+  }
+
+  .hero {
+    flex: 1 1 400px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
     }
   }
 }

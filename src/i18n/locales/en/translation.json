@@ -1,7 +1,7 @@
 {
-  "home": {
-    "title": "Home",
-    "description": "Heavy Engineering is a Russian engineering company specializing in the supply of catalysts for sulfuric acid production. We work with major enterprises in the chemical and petrochemical industries, delivering reliable solutions and consistent quality. Our main focus is the distribution of catalysts produced by the Samara Catalyst Plant (SZK). Among our key clients are EuroChem enterprises. Our mission is to provide advanced technologies, high-performance materials, and world-class engineering support.",
+  "about": {
+    "title": "About",
+    "description": "Heavy Engineering is an engineering integrator specializing in technologies for sulfuric acid production and other large-scale industrial processes. Our main areas of activity include the design of process units in cooperation with leading international licensors, the supply of complex process equipment, and the supply and maintenance of industrial catalysts. LLC “Heavy Engineering” (HE) is a technology partner and distributor of the Russian manufacturer of sulfur dioxide oxidation catalysts — JSC “Samara Catalyst Plant” (SZK). We are also the official agent and distributor of Keyontechs Group (Keyon Process Co., LTD.). Our customers include fertilizer producers, non-ferrous metallurgy enterprises, and oil refineries. Our competencies are based on a team of highly qualified engineers, technologists, and experts with many years of experience in leading international and Russian companies.",
     "button": "Learn more"
   },
   "catalysts": {
@@ -15,8 +15,8 @@
     "note": "We provide technical selection, supply, logistics, and implementation support for catalysts produced by the Samara Catalyst Plant (SZK).",
     "button": "Request a quote"
   },
-  "about": {
-    "title": "About",
+  "technologies": {
+    "title": "Тechnologies",
     "description": "Heavy Engineering is a Russian engineering company operating in the chemical and petrochemical industries. Our team includes experienced engineers and experts who have worked in leading Russian and international enterprises. We provide design, selection, and supply of process equipment as well as engineering consulting. Among our clients are EuroChem, Phosphorit, and Balakovo Mineral Fertilizers. We are proud to be an official partner of the Samara Catalyst Plant and hold CPR and KEY dealership certificates.",
     "button": "Our projects"
   },
@@ -35,6 +35,7 @@
     "phone1": "+7 495 123 45 67",
     "phone2": "+7 916 321 65 34",
     "email": "info@heavy-engineering.ru",
-    "site": "www.heavy-engineering.ru"
+    "site": "www.heavy-engineering.ru",
+    "copy": "All rights reserved"
   }
 }

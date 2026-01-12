@@ -54,7 +54,7 @@ const Footer = (): ReactElement => {
         </div>
 
         <p className={styles.copy}>
-          © {new Date().getFullYear()} Heavy Engineering. Все права защищены.
+          © {new Date().getFullYear()} Heavy Engineering. {t('footer.copy')}.
         </p>
       </div>
     </footer>

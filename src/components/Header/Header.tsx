@@ -28,7 +28,7 @@ const Header = (): ReactElement => {
                 }
                 onClick={() => setIsOpen(false)} // закрытие на мобильны
               >
-                {t('home.title')}
+                {t('header.about')}
               </NavLink>
             </li>
             <li>
@@ -39,18 +39,18 @@ const Header = (): ReactElement => {
                 }
                 onClick={() => setIsOpen(false)} // закрытие на мобильны
               >
-                {t('catalysts.title')}
+                {t('header.catalysts')}
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/technologies"
                 className={({ isActive }) =>
                   isActive ? styles.active : undefined
                 }
                 onClick={() => setIsOpen(false)} // закрытие на мобильны
               >
-                {t('about.title')}
+                {t('header.technologies')}
               </NavLink>
             </li>
             <li>
@@ -61,7 +61,7 @@ const Header = (): ReactElement => {
                 }
                 onClick={() => setIsOpen(false)} // закрытие на мобильны
               >
-                {t('contacts.title')}
+                {t('header.contacts')}
               </NavLink>
             </li>
           </ul>
