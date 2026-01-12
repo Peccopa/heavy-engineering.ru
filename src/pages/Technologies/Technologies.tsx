@@ -46,7 +46,9 @@ const Technologies = (): ReactElement => {
           </li>
         </ul>
 
-        <h2 className={styles.subtitle}>{t('technologies.certificatesTitle')}</h2>
+        <h2 className={styles.subtitle}>
+          {t('technologies.certificatesTitle')}
+        </h2>
         <ul className={styles.certificates}>
           <li>
             <img

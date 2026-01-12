@@ -12,8 +12,12 @@ const About = (): ReactElement => {
         <div className={styles.container}>
           <div className={styles.content}>
             <h1 className={styles.title}>{t('about.title')}</h1>
-            <p className={styles.description}>{t('about.descriptions.descr-1')}</p>
-            <p className={styles.description}>{t('about.descriptions.descr-2')}</p>
+            <p className={styles.description}>
+              {t('about.descriptions.descr-1')}
+            </p>
+            <p className={styles.description}>
+              {t('about.descriptions.descr-2')}
+            </p>
             <button className={styles.button}>{t('about.button')}</button>
           </div>
           <div className={styles.hero}>
