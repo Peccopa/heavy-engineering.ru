@@ -31,17 +31,15 @@ const Footer = (): ReactElement => {
             </p>
           </div>
 
-          {/* Правая часть — контакты */}
+          <p className={styles.copy}>
+            © {new Date().getFullYear()} Heavy Engineering. {t('footer.copy')}.
+          </p>
+
           <address className={styles.contacts}>
             <a href={`tel:${t('footer.phone1')}`} className={styles.link}>
               <img src={phoneIcon} alt="Phone" />
               {t('footer.phone1')}
             </a>
-
-            {/* <a href={`tel:${t('footer.phone2')}`} className={styles.link}>
-              <img src={phoneIcon} alt="Phone" />
-              {t('footer.phone2')}
-            </a> */}
 
             <a href={`mailto:${t('footer.email')}`} className={styles.link}>
               <img src={emailIcon} alt="Email" />
@@ -59,10 +57,6 @@ const Footer = (): ReactElement => {
             </a>
           </address>
         </div>
-
-        <p className={styles.copy}>
-          © {new Date().getFullYear()} Heavy Engineering. {t('footer.copy')}.
-        </p>
       </div>
     </footer>
   );
