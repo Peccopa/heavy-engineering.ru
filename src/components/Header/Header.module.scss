@@ -3,12 +3,12 @@
 
 .header {
   width: 100%;
-  // box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 8%);
+  background-color: var.$color-light;
   box-shadow: 0 0.2rem 0.6rem var.$color-shadow-2;
 }
 
 .container {
-  max-width: var.$dsktop-width;
+  max-width: var.$dskmax-width;
   margin: 0 auto;
   padding: 2rem;
 

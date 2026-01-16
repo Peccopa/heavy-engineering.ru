@@ -31,9 +31,15 @@ const Footer = (): ReactElement => {
             </p>
           </div>
 
-          <p className={styles.copy}>
-            © {new Date().getFullYear()} Heavy Engineering. {t('footer.copy')}.
-          </p>
+            {/* <p className={styles.copy}>
+              © {new Date().getFullYear()} Heavy Engineering. {t('footer.copy')}.
+            </p> */}
+
+          <div className={styles.companyInfo}>
+            <p>ООО «Хэви Инжиниринг»</p>
+            <p>ОГРН 1215000123304</p>
+            <p>ИНН 5032335601</p>
+          </div>
 
           <address className={styles.contacts}>
             <a href={`tel:${t('footer.phone1')}`} className={styles.link}>

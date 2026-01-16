@@ -17,27 +17,35 @@ const About = (): ReactElement => {
             <img src={heroPhoto} alt="Heavy Engineering" />
           </div>
           <div className={styles.content}>
-            <h1 className={styles.title}>{t('about.title')}</h1>
-            <p className={styles.description}>
-              {t('about.descriptions.descr-1')}
-            </p>
-            <p className={styles.description}>
-              {t('about.descriptions.descr-2')}
-            </p>
+            <div className={styles.mainText}>
+              <h1 className={styles.title}>{t('about.title')}</h1>
+              <p className={styles.description}>
+                {t('about.descriptions.descr-1')}
+              </p>
+              <p className={styles.description}>
+                {t('about.descriptions.descr-2')}
+              </p>
+            </div>
             <div className={styles.cards}>
               <div className={styles.card}>
                 <div className={styles.cardTitle}>
                   <img src={factory} alt="factory" />
                   <h4>Комплексные решения</h4>
                 </div>
-                <p>Проектирование и поставка технологических решений</p>
+                <p>
+                  Полный цикл инжиниринговых услуг — от разработки
+                  технологических решений и проектирования до поставки.
+                </p>
               </div>
               <div className={styles.card}>
                 <div className={styles.cardTitle}>
                   <img src={technology} alt="technology" />
                   <h4>Современные технологии</h4>
                 </div>
-                <p>Внедрение современных технологий для производства</p>
+                <p>
+                  Внедрение современных технологий — от адаптации процессов до
+                  промышленной реализации производства.
+                </p>
               </div>
               <div className={`${styles.card} ${styles.cardImage}`}></div>
               <div className={`${styles.card} ${styles.cardImage}`}></div>
@@ -47,7 +55,8 @@ const About = (): ReactElement => {
                   <h4>Сервис и поддержка</h4>
                 </div>
                 <p>
-                  Комплексное сервисное сопровождение оборудования
+                  Комплексное сервисное сопровождение оборудования — от
+                  пусконаладочных работ до технической поддержки.
                 </p>
               </div>
             </div>

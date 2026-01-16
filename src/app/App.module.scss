@@ -9,7 +9,20 @@
   flex: 1;
   box-sizing: border-box;
   width: 100%;
+  display: flex;
+  align-items: center;
 
-  // max-width: 1440px;
-  margin: 0 auto;
+  //   background: rgba(255, 255, 255, 0.75);
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../assets/images/home/factory-2.png') center / cover
+    // background: url('../assets/images/home/factory-5.png') center / cover
+      no-repeat;
+    // background-image: url('../assets/images/home/factory-1.png');
+    filter: blur(2px) brightness(0.7);
+    opacity: 0.2;
+    z-index: -1;
+  }
 }
