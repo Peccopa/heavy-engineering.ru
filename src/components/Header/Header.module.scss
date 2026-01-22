@@ -82,7 +82,7 @@
   font-size: 2rem;
   background: none;
 
-  @media (max-width: var.$tablet-width) {
+  @media (max-width: var.$bigtab-width) {
     display: block;
   }
 }

@@ -15,8 +15,11 @@ const Footer = (): ReactElement => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.inner}>
-          {/* Левая часть — логотип */}
-          <div className={styles.brand}>
+          <div
+            className={`${styles.brand} ${
+              i18n.language === 'ru' ? styles.brandRu : ''
+            }`}
+          >
             <img src={logo} alt="Heavy Engineering" className={styles.logo} />
             <p
               className={
@@ -25,31 +28,43 @@ const Footer = (): ReactElement => {
                   : `${styles.text} ${styles.textEn}`
               }
             >
-              {t('footer.description', {
+              {t('footer.subtitle', {
                 defaultValue: 'HEAVY ENGINEERING LLC',
               })}
             </p>
           </div>
 
-            {/* <p className={styles.copy}>
+          {/* <p className={styles.copy}>
               © {new Date().getFullYear()} Heavy Engineering. {t('footer.copy')}.
             </p> */}
 
-          <div className={styles.companyInfo}>
-            <p>ООО «Хэви Инжиниринг»</p>
-            <p>ОГРН 1215000123304</p>
-            <p>ИНН 5032335601</p>
+          <div
+            className={
+              i18n.language === 'ru'
+                ? `${styles.companyInfo} `
+                : `${styles.hide}`
+            }
+          >
+            <p>{t('footer.info.info1')}</p>
+            <p>{t('footer.info.info2')}</p>
+            <p>{t('footer.info.info3')}</p>
           </div>
 
           <address className={styles.contacts}>
-            <a href={`tel:${t('footer.phone1')}`} className={styles.link}>
+            <a
+              href={`tel:${t('footer.contacts.phone1')}`}
+              className={styles.link}
+            >
               <img src={phoneIcon} alt="Phone" />
-              {t('footer.phone1')}
+              {t('footer.contacts.phone1')}
             </a>
 
-            <a href={`mailto:${t('footer.email')}`} className={styles.link}>
+            <a
+              href={`mailto:${t('footer.contacts.email')}`}
+              className={styles.link}
+            >
               <img src={emailIcon} alt="Email" />
-              {t('footer.email')}
+              {t('footer.contacts.email')}
             </a>
 
             <a
@@ -59,7 +74,7 @@ const Footer = (): ReactElement => {
               className={styles.link}
             >
               <img src={globeIcon} alt="Website" />
-              {t('footer.site')}
+              {t('footer.contacts.site')}
             </a>
           </address>
         </div>

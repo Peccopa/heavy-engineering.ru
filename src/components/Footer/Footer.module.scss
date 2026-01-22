@@ -66,6 +66,12 @@
   }
 }
 
+.brandRu {
+  @media (max-width: var.$bigtab-width) {
+    display: none;
+  }
+}
+
 .logo {
   width: 18rem;
   height: auto;
@@ -74,7 +80,7 @@
 
 .textRu {
   font-size: 1.35rem;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.14rem;
   line-height: 1.4;
   text-align: start;
   opacity: 0.9;
@@ -125,6 +131,13 @@
   flex-direction: column;
   gap: 0.75rem;
   font-size: 1.7rem;
+  @media (max-width: var.$bigtab-width) {
+    order: 2;
+  }
+}
+
+.hide {
+  display: none;
 }
 
 .copy {

@@ -20,7 +20,7 @@ const Header = (): ReactElement => {
         </Link>
         <nav className={styles.nav}>
           <ul className={`${styles.list} ${isOpen ? styles.open : ''}`}>
-            <li>
+            {/* <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -30,8 +30,8 @@ const Header = (): ReactElement => {
               >
                 {t('header.about')}
               </NavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <NavLink
                 to="/catalysts"
                 className={({ isActive }) =>
@@ -41,8 +41,8 @@ const Header = (): ReactElement => {
               >
                 {t('header.catalysts')}
               </NavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <NavLink
                 to="/technologies"
                 className={({ isActive }) =>
@@ -52,8 +52,8 @@ const Header = (): ReactElement => {
               >
                 {t('header.technologies')}
               </NavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <NavLink
                 to="/contacts"
                 className={({ isActive }) =>
@@ -63,16 +63,16 @@ const Header = (): ReactElement => {
               >
                 {t('header.contacts')}
               </NavLink>
-            </li>
+            </li> */}
           </ul>
 
-          <button
+          {/* <button
             type="button"
             className={styles.burger}
             onClick={() => setIsOpen(!isOpen)}
           >
             ☰
-          </button>
+          </button> */}
 
           <button
             type="button"
