@@ -16,9 +16,9 @@
     background-color: var.$color-brand-l;
     clip-path: polygon(100% 100%, 0 100%, 100% 0);
 
-    @media (max-width: var.$tablet-width) {
-      width: 30rem;
-      height: 30rem;
+    @media (max-width: var.$midmob-width) {
+      width: 18rem;
+      height: 18rem;
     }
   }
 }
@@ -45,13 +45,6 @@
   align-items: flex-start;
   justify-content: space-between;
   z-index: 10;
-
-  @media (max-width: var.$tablet-width) {
-    z-index: 10;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 }
 
 .brand {
@@ -99,6 +92,9 @@
   flex-direction: column;
   gap: 0.6rem;
   font-style: normal;
+  @media (max-width: var.$bigmob-width) {
+    font-size: 1.4rem;
+  }
 }
 
 .link {
@@ -133,6 +129,9 @@
   font-size: 1.7rem;
   @media (max-width: var.$bigtab-width) {
     order: 2;
+  }
+  @media (max-width: var.$bigmob-width) {
+    font-size: 1.4rem;
   }
 }
 

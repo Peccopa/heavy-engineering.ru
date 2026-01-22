@@ -26,6 +26,10 @@
   img {
     width: auto;
     height: 6rem;
+
+    @media screen and (width <= var.$tablet-width) {
+      height: 4rem;
+    }
   }
 }
 
