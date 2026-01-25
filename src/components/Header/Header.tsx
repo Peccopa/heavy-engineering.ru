@@ -79,7 +79,8 @@ const Header = (): ReactElement => {
             className={styles.button}
             onClick={toggleLanguage}
           >
-            {i18n.language.toUpperCase()}
+            {/* {i18n.language.toUpperCase()} */}
+            {t('header.language').toUpperCase()}
           </button>
         </nav>
       </div>

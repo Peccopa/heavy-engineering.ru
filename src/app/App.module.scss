@@ -7,22 +7,22 @@
 
 .main {
   position: relative;
-  flex: 1;
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex: 1;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 
   &::before {
     content: '';
     position: absolute;
+    z-index: -1;
     inset: 0;
+    opacity: 0.2;
     background-image: url('../assets/images/home/factory-2.png');
+    background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
-    background-repeat: repeat-y;
     filter: blur(2px) brightness(0.7);
-    opacity: 0.2;
-    z-index: -1;
   }
 }
