@@ -47,6 +47,7 @@
       }
 
       .subTitle {
+        font-size: 1.9rem;
         font-weight: 400;
 
         @media screen and (width <= var.$bigmob-width) {
@@ -57,6 +58,7 @@
       .list li {
         position: relative;
         padding-left: 3rem;
+        font-size: 1.9rem;
 
         &::before {
           content: '–';
@@ -64,7 +66,7 @@
           left: 1rem;
         }
 
-        @media screen and (width <= var.$bigmob-width) {
+        @media screen and (width <= var.$tablet-width) {
           font-size: 1.8rem;
         }
       }
@@ -72,10 +74,15 @@
       .description {
         font-size: 1.9rem;
         color: var.$color-dark;
-        text-indent: 2rem;
+
+        // text-indent: 2rem;
+
+        @media screen and (width <= var.$tablet-width) {
+          font-size: 1.8rem;
+        }
       }
 
-      @media screen and (width <= var.$bigmob-width) {
+      @media screen and (width <= var.$tablet-width) {
         padding: 2rem 1rem;
         font-size: 1.8rem;
       }
